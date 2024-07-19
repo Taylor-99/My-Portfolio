@@ -1,6 +1,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 
 const About = () => {
 
@@ -35,6 +36,11 @@ const About = () => {
 
         Having honed my skills at General Assembly, I am now actively seeking job opportunities where I can blend my technical expertise with a human-centered approach, creating software solutions that enhance lives and empower individuals. I am driven by a desire to innovate and collaborate, making a positive impact on the world through technology.
       </p>
+
+      <br></br>
+      <br></br>
+
+      <p className="text-black text-lg p-6"> What to learn more about me profesionally, Check out my <Link href="https://www.linkedin.com/in/taylor-e-young/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 visited:text-purple-600"> LinkedIn </Link> </p>
 
     </div>
   )
