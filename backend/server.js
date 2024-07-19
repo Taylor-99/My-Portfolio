@@ -5,13 +5,18 @@ const cors = require("cors");
 
 // Import JSON files
 const projects = require("./projects.json");
-const about = require("./about.json");
 
 // Create our app object
 const app = express();
 
 // set up middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:3000"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 // route for retrieving projects
 app.get("/projects", (req, res) => {
@@ -20,7 +25,9 @@ app.get("/projects", (req, res) => {
 });
 
 //declare a variable for our port number
-const PORT = process.env.PORT || 4000;
+const PORT = 4000;
 
-// turn on the server listener
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+// App Listen
+app.listen(PORT, ()=> {
+  console.log(`Listening to port ${PORT}`);
+});  

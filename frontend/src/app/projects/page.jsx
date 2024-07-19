@@ -1,8 +1,13 @@
 
 import React from 'react'
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 const Projects = () => {
+
+  const [projects, setProjects] = useState([]);
+
+  
 
   return (
     <div>
@@ -22,15 +27,14 @@ const Projects = () => {
 
           <br></br>
 
-        <Link href="https://pirate-adventure-trivia-game.vercel.app">
-          <img src='https://imgur.com/cGs17gy.png' className="block align-middle w-auto"/>
+        <Link href="https://pirate-adventure-trivia-game.vercel.app" target="_blank" rel="noopener noreferrer">
+          <img src='https://imgur.com/cGs17gy.png' className="block align-middle w-auto" alt="Project Cover"/>
         </Link>
 
           <br></br>
 
         <div className="flex justify-center">
-          <Link href="https://github.com/Taylor-99/Project-1-Trivia-Game"
-            className="bg-pink-400 text-2xl text-white px-8 py-4 hover:bg-pink-500 rounded-md">
+          <Link href="https://github.com/Taylor-99/Project-1-Trivia-Game" className="bg-pink-400 text-2xl text-white px-8 py-4 hover:bg-pink-500 rounded-md" target="_blank" rel="noopener noreferrer">
               Github
           </Link>
         </div>
@@ -42,7 +46,7 @@ const Projects = () => {
         <br></br>
         <br></br>
 
-      <div className="bg-white bg-opacity-40 rounded-lg shadow-md p-4" >
+      {/* <div className="bg-white bg-opacity-40 rounded-lg shadow-md p-4" >
 
         <h1 className="text-2xl text-center text-black">Reader's Jounal</h1>
 
@@ -118,7 +122,7 @@ const Projects = () => {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
+        <br></br> */}
 
     </div>
   )

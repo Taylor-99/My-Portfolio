@@ -16,8 +16,8 @@ const About = () => {
 
         <Image
           src="/headshot.jpeg"
-          width={100}
-          height={100}
+          width={150}
+          height={150}
           alt="Picture of Taylor"
           className="rounded-full" 
         />
@@ -26,7 +26,7 @@ const About = () => {
       <br />
 
       <p className="text-black text-lg p-6 bg-white bg-opacity-40 rounded-lg shadow-md">
-        I’m Taylor, a recent graduate of General Assembly’s intensive Software Engineering Bootcamp. Originally from Crystal River, FL, I earned a Bachelor of Arts in Psychology with a secondary focus in Computer Science from New College of Florida in 2022. My academic journey reflects a deep curiosity about human behavior and a passion for leveraging technology to drive positive change.
+        I&apos;m Taylor, a recent graduate of General Assembly&apos;s immersive Software Engineering Bootcamp. Originally from Crystal River, FL, I earned a Bachelor of Arts in Psychology with a secondary focus in Computer Science from New College of Florida in 2022. My academic journey reflects a deep curiosity about human behavior and a passion for leveraging technology to drive positive change.
 
         <br /><br />
 
@@ -38,9 +38,8 @@ const About = () => {
       </p>
 
       <br></br>
-      <br></br>
 
-      <p className="text-black text-lg p-6"> What to learn more about me profesionally, Check out my <Link href="https://www.linkedin.com/in/taylor-e-young/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 visited:text-purple-600"> LinkedIn </Link> </p>
+      <p className="text-black text-lg p-6"> What to learn more about me profesionally, Check out my <Link href="https://www.linkedin.com/in/taylor-e-young/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 visited:text-purple-600"> LinkedIn </Link> or View my <Link href="https://docs.google.com/document/d/1g5_BKtvFA9-W8fqRc-bN_TDMcSIW8it9tDyRIM35-34/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 visited:text-purple-600"> Resume </Link> </p>
 
     </div>
   )
