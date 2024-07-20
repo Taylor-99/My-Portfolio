@@ -1,34 +1,8 @@
 
-// To inform next js, this is a client component 
-"use client"; 
-
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import projects from "../data/projects.json"
 
 const Projects = () => {
-
-  const [projects, setProjects] = useState([]);
-  // const backend_endpoint = process.env.NEXT_PUBLIC_BACKEND_URL
-  const backend_endpoint = "http://localhost:4000"
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-
-        const response = await fetch(`${backend_endpoint}/projects`, {
-          credentials: 'include'
-        });
-
-        const data = await response.json()
-        setProjects(data)
-
-      } catch (error) {
-        console.error('Error: ', error.message);
-      }
-    };
-
-    fetchProjects()
-  }, []);
 
   return(
 
