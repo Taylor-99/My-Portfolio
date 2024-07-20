@@ -39,8 +39,6 @@ const About = () => {
 
       <br></br>
 
-      <p className="text-black text-lg p-6"> What to learn more about me profesionally, Check out my <Link href="https://www.linkedin.com/in/taylor-e-young/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 visited:text-purple-600"> LinkedIn </Link> or View my <Link href="https://docs.google.com/document/d/1g5_BKtvFA9-W8fqRc-bN_TDMcSIW8it9tDyRIM35-34/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 visited:text-purple-600"> Resume </Link> </p>
-
     </div>
   )
 }

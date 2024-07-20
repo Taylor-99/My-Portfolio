@@ -34,9 +34,6 @@ const Projects = () => {
 
         <div className="flex flex-col items-center text-center p-4">
           <h2 className="text-2xl font-semibold mb-4 border-b-2 border-gray-800 pb-2 text-black">My Projects</h2>
-          <p className="text-md text-black">
-            Visit my <Link href="https://github.com/Taylor-99" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 visited:text-purple-600">GitHub</Link>
-          </p>
         </div>
 
       <br></br>
