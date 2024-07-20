@@ -8,8 +8,8 @@ import { useState, useEffect } from 'react';
 const Projects = () => {
 
   const [projects, setProjects] = useState([]);
-  const backend_endpoint = process.env.NEXT_PUBLIC_BACKEND_URL
-  // const backend_endpoint = "http://localhost:4000"
+  // const backend_endpoint = process.env.NEXT_PUBLIC_BACKEND_URL
+  const backend_endpoint = "http://localhost:4000"
 
   useEffect(() => {
     const fetchProjects = async () => {
