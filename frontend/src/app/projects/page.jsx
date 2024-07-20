@@ -8,12 +8,13 @@ import { useState, useEffect } from 'react';
 const Projects = () => {
 
   const [projects, setProjects] = useState([]);
+  const backend_endpoint = process.env.NEXT_PUBLIC_BACKEND_URL
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
 
-        const response = await fetch("http://localhost:4000/projects", {
+        const response = await fetch(`${backend_endpoint}/projects`, {
           credentials: 'include'
         });
 
