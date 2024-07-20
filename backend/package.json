@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Taylor-99/My-Portfolio#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "node-mailjet": "^6.0.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

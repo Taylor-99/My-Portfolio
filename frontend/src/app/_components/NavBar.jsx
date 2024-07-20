@@ -26,12 +26,6 @@ const NavBar = () => {
                     Projects
                 </Link>
             </li>
-            <li className={`p-2 text-black ${pathname === '/contact' ? 'font-bold underline' : ''}`}>
-                <Link href="/contact">
-                    Contact
-                </Link>
-            </li>
-            
         </ul>
     </div>
   )
