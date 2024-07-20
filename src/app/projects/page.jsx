@@ -45,7 +45,7 @@ const Projects = () => {
 
               return projects ? loaded() : <h1>Loading...</h1>;
 
-          })};
+          })}
 
       </ul>
     </div>
