@@ -40,7 +40,7 @@ const Projects = () => {
 
                 </li>
 
-              );
+              )
             }
 
               return projects ? loaded() : <h1>Loading...</h1>;
